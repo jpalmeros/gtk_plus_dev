@@ -28,7 +28,7 @@ int main (int argc,
 
 
     /* Connect the button to the clicked signal. The callback function recieves the
-     * window followed by the button because the arguments are swapped. */
+       window followed by the button because the arguments are swapped. */
     g_signal_connect_swapped (G_OBJECT (button), "clicked",
                               G_CALLBACK (gtk_widget_destroy),
                               (gpointer) window);
